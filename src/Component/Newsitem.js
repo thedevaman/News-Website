@@ -10,7 +10,7 @@ export class Newsitem extends Component {
     return (
       <div>
         <div className="card" style={{width: "18rem"}}>
-          <img src={imageUrl} className="card-img-top" alt="..." style={{height:"157px"}}/>
+          <img src={!imageUrl?"https://mms.businesswire.com/media/20220712005073/en/654576/23/LSVP_Horizontal_Logo-80.jpg":imageUrl} className="card-img-top" alt="..." style={{height:"157px"}}/>
           <div className="card-body">
             <h5 className="card-title">{title}...</h5>
             <p className="card-text">{description}...</p>
